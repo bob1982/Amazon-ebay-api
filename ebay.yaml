@@ -1,0 +1,35 @@
+# eBay SDK Defaults
+
+name: ebay_api_config
+
+# Trading API Sandbox - https://www.x.com/developers/ebay/products/trading-api
+api.sandbox.ebay.com:
+    compatability: 719
+    appid: Paramjit-6d0e-44de-98a7-361bc74a3a6d
+    certid: d328b899-c174-4cf4-9e5b-68949a774d79
+    devid: 4774983e-b68d-4bef-a2fd-bf2ec3384d93
+    token: AgAAAA**AQAAAA**aAAAAA**3f6/Vw**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4GjDJCEoQ+dj6x9nY+seQ**2pkDAA**AAMAAA**FyJAlHiEouEJ9k722lN1sh2hU2LYc7yrWbUEQpJIE+GYeJqrGgKd/efCuG2XrJBiLy1+5lcOimPqxfYf10X3/esZqSlbO9kxwpkxoELVB2UvnoppWMcPjhWw4KLDyMrIB6mAzCWSMj52SjIf4OPEaTqRRGOn0s2gMmXZ7apE/EzDXDDtnMLxBfMmWZ5uUMTsZUjrkjwJFTllRA3ctP+qEKcQFz1aCmocjMgUyfksA85rdHYoYjuhWWrdHNTANZ7fgRQSnQQkcPFbTG3aRhrcDARhkUg8B+iwAVp2RifRk6RVovJBnS+mn9BJj8dEwt06bSq6YrXalZTY68tbJjp2tbu5EvFjtUI/bjbw3g0YVB+6uL4vQEQlh7OKF3zOboZzwpo3KHRv0OWM0uXtlAmd/0lT3Mdv6WyGDStIOUImtRNY0S2fV238bphItJdDf/6IQD6dBBOUK/ac1zsAyHfqUccscsY94ywJM6xafQNCErkxT/0S3wavOO+5QbZLrkCsSuEpcXGaQ7DWUqdo6MnqAup3ggOAbwh5KUcooylnsY6ffR4kHRuuj56L+oZ9x1/9yNd+NYyifvcDfuUMr7YRYZo7imPqXyrKLH8zHmzhqErX0OoV3cnRy96gp3q3oJGxWnVAhoIfZayWcJ4pHzodUC///FqqGfNtMv2BCv9M4R5GcWwlvmbvbDMxrP4I5FypnpKa27ob01K/LiA4UXK1O7T8p5Z1nilGZ3cjbSeC8ti2rG+SnQum00Y6+GaBVo+h
+
+# Trading API - https://www.x.com/developers/ebay/products/trading-api
+api.ebay.com:
+    version: 719
+    appid: Paramjit-884f-48c2-9c0b-a146e2bc25a3
+    certid: 6ca9ad34-8fe6-4138-820a-5340560b185d
+    devid: 4774983e-b68d-4bef-a2fd-bf2ec3384d93
+    token: AgAAAA**AQAAAA**aAAAAA**CyG/Vw**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AHmIWpDpKGpQ2dj6x9nY+seQ**vQoDAA**AAMAAA**SacPLdxpla8nnEYSYFR1bbevjo4aZ21TlJf+r8NK5TU1sI4yyq2S907vdh7MLX/XNQB4iQoPm35ofu1EIwYIv941A3uQltFzL+t95evK0WUn8iDX56zp0pSrDyvpxiCGcOO8NmKYUhwvbh8OhEXEcf7Sm/TqEBsnSmhsAd8KPU0Km0aBSOfGOcbtJ+quUabPcOqDGDHPOvEEzrV26xv1O7Z/kRWc5LtWMD1GPKhB0DXRzs4z5UH6V3aNRRiEy5gHrpqo0qdUkLH1pkEXDTzGyPwPFZtNkqnze5YSmkd0uZWVLfJptEswRS++Hr9WM5+/jAT0jaUJu2FNEwsJphKzQMm9shrBUFseCZtvyOM82BWKpPiW8UkdgL47TdzG5UzE6tIogIKeE9Hh02Wr/nn3rBDfxUZV3omlUpDE3mNydoY70FlGF9N2YTjlvWPR0c4RkK8YLEijhN+ZYD95ct8V6XnR1m2B3vtY3bsWda0xEBz+IzC4017LVInCajj+Vm0jQFFdO092WKCRyXsolshs+HRqvtO9Wx2PPc7STBhPpQah+TqmJy2iAQ7ruaJILf5rix64vjJhpiIeq2DDx0ZD0ocIIrLWn5IUyeRbmO4k6PJIS7dNH/8RjIrqCBR0yAi0MDDyrBgVQmBg6lh5NddxjxDFYdV677/4LnBrl2d6Y2SnzHSo22OSioAbv7dqkpdETxgBfqO4WVkV3/9r2X0Sq6k53B++2u7kylOD7AsvapMIvGwAqCmr2+WCpDWe4/cX
+    siteid: 203
+
+# Finding API - https://www.x.com/developers/ebay/products/finding-api
+svcs.ebay.com:
+    appid: ENTER_YOUR_APPID_HERE
+    version: 1.0.0
+
+# Shopping API - https://www.x.com/developers/ebay/products/shopping-api
+open.api.ebay.com:
+    appid: ENTER_YOUR_APPID_HERE
+    version: 671
+
+    # Optional affiliate tracking
+    # http://developer.ebay.com/DevZone/shopping/docs/Concepts/ShoppingAPI_FormatOverview.html#StandardURLParameters
+    trackingid: ENTER_YOUR_TRACKINGID_HERE
+    trackingpartnercode: ENTER_YOUR_PARTNERCODE_HERE
