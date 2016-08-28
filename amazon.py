@@ -1,7 +1,9 @@
 import bottlenose
 import xmltodict
 import MySQLdb
-
+import ConfigParser
+config=ConfigParser.ConfigParser()
+config.read("amazon.yaml")
 def getKey(item,keys):
     cnt=len(keys)
     for idx in range(0,cnt):
@@ -13,13 +15,8 @@ def getKey(item,keys):
     return item
 
 
-config = {
-    'access_key': 'AKIAIBQFAULRRIOEHZ4Q',
-    'secret_key': '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',
-    'associate_tag': 'redtoad-10',
-    'locale': 'us'
-}
-amazon=bottlenose.Amazon(config['access_key'],config['secret_key'],config['associate_tag'],Region="IN",MaxQPS=0.9)
+
+amazon=bottlenose.Amazon(config.get('Amazon','access_key'),config.get('Amazon','secret_key'),config.get('Amazon','associate_tag'),Region="IN",MaxQPS=0.9)
 #response = amazon.ItemSearch(Keywords="Kindle 3G", SearchIndex="All")
 #print response
 #response=amazon.ItemLookup(ItemId="B01CFYRK1K",MerchantId="Amazon",ResponseGroup="Large,Offers")

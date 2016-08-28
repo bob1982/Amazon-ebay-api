@@ -1,6 +1,7 @@
 import bottlenose
 import xmltodict
 import MySQLdb
+import ConfigParser
 
 db=MySQLdb.connect("localhost","root","","ameb")
 cursor=db.cursor()
@@ -16,13 +17,9 @@ def getKey(item,keys):
     return item
 
 
-config = {
-    'access_key': 'AKIAIBQFAULRRIOEHZ4Q',
-    'secret_key': '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',
-    'associate_tag': 'redtoad-10',
-    'locale': 'us'
-}
-amazon=bottlenose.Amazon(config['access_key'],config['secret_key'],config['associate_tag'],Region="IN",MaxQPS=0.9)
+config=ConfigParser.ConfigParser()
+config.read("amazon.yaml")
+amazon=bottlenose.Amazon(config.get('Amazon','access_key'),config.get('Amazon','secret_key'),config.get('Amazon','associate_tag'),Region="IN",MaxQPS=0.9)
 for page in range(0,1):
     p=page+1
     response=amazon.BrowseNodeLookup(BrowseNodeId=1350381031,ResponseGroup='TopSellers')
